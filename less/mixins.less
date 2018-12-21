@@ -1,0 +1,14 @@
+//遍历使用的是for循环
+//但是less中不支持for循环
+//使用函数的迭代，会得到一个死循环
+//需要根据当前数组的长度停止循环
+//给函数的执行附加条件，需要序号，less中的数组用序号来遍历
+//@index从1开始
+.adapterMixin(@index) when (@index > 0){//when是循环
+  @media(min-width: extract(@adapterDeviceList,@index)){//extract提取数组当中的数据
+    html{
+      font-size:@baseFontSize/@psdWidth*extract(@adapterDeviceList,@index);
+    }
+  }
+  .adapterMixin(@index - 1);//迭代调用
+}
