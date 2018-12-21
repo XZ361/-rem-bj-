@@ -2,8 +2,8 @@
 利用rem适配+less技术实现苏宁商城移动端简易布局页面
 --
 技术：rem适配（在移动端实现宽高自适应）+Less分功能模块编写商城样式
----
-项目文件：<br/>
+----
+项目文件：<br/>                                                                              
 │  index.html         //主页<br/>       
 ├─images              //图片<br/>
 ├─js<br/>
@@ -19,14 +19,3 @@
 │      topBar.less          //顶部通栏<br/>
 │      var.less             //变量模块<br/>
 └─lib                          //资源文件<br/>
-    ├─font-awesome<br/>
-    │  ├─css<br/>
-    │  └─fonts<br/>
-    ├─less<br/>
-    │      less.js<br/>
-    │      less.min.js<br/>
-    └─zepto<br/>
-            fx.js<br/>
-            selector.js<br/>
-            zepto.min.js<br/>
-
